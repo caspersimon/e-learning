@@ -4,12 +4,12 @@ Om teksten te veranderen:
 
 **1. Fork de repository**
 
-Dit is een kopie die je maakt van deze repository, de kopie staat opgeslagen onder je eigen account.
+Bovenaan deze pagina staat er een knopje "fork." Een fork is een kopie die je maakt van deze repository, de kopie staat opgeslagen onder je eigen account. 
 
    
 **2. Maak veranderingen in de teksten onder `e-learning/markdown_files`**
 
-Alle teksten die er op de website worden laten zien zijn hier georganiseerd in mapjes corresponderend aan een pagina. Maak de veranderingen in je eigen fork en "commit changes" om de veranderingen op te slaan.
+In je eigen fork van de broncode maak je de aanpassingen. Alle teksten die er op de website worden laten zien zijn georganiseerd in mapjes corresponderend aan een pagina. Maak de veranderingen in je eigen fork en "commit changes" om de veranderingen op te slaan. Dit kan je allemaal doen op de website van GitHub.
 
 **3. Maak een pull request naar de originele repository**
 
