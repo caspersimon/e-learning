@@ -13,6 +13,6 @@ In je eigen fork van de broncode maak je de aanpassingen. Alle teksten die er op
 
 **3. Maak een pull request naar de originele repository**
 
-Een pull request is een verzoek om bestanden aan te passen met de veranderingen die je hebt gemaakt in je eigen fork. Om een pull request in te dienen ga je naar de originele repository, en dan is er bovenaan de pagina een knopje waarmee je dat kan doen.
+Een pull request is een verzoek om bestanden aan te passen met de veranderingen die je hebt gemaakt in je eigen fork. Om een pull request in te dienen ga je naar de homepage van je eigen fork, dan klik je op "contribute" om een pull request in te dienen.
 
 Meer gedetailleerde instructies: [klik hier](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork)
