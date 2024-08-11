@@ -22,9 +22,12 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+          
+      - name: Set up environment variable
+        run: echo "ACCESS_TOKEN=${{ secrets.REFLEX_API_TOKEN }}" >> $GITHUB_ENV
 
       - name: Authenticate with Reflex
-        run: reflex login --token ${{ secrets.REFLEX_API_TOKEN }}
+        run: reflex login
 
       - name: Deploy to Reflex Hosting
         run: reflex deploy --no-interactive -k elearning -r lhr
