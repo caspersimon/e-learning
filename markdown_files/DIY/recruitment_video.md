@@ -1,4 +1,4 @@
-## Video: come work for us
+## Video: do you want to create videos?
 
 
 There is definitely room for improvement with this video: I forgot to do j-cuts so it is a bit slow. Your task: make it better.
