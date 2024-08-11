@@ -15,7 +15,7 @@ def go_to_examples() -> rx.Component:
 
 
 def studyroom_video() -> rx.Component:
-    return Videos.video_element(path="/videos/studyroom.mp4", textpath="markdown_files/fundamentals/explanation_studyroom_video.md")
+    return Videos.video_element(path="/videos/studyroom.MP4", textpath="markdown_files/fundamentals/explanation_studyroom_video.md")
 
 
 

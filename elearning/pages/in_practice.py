@@ -18,7 +18,7 @@ def main_text2() -> rx.Component:
 
 
 def studyhack_video() -> rx.Component:
-    return Videos.video_element(path="/videos/studyhack.mp4", textpath="markdown_files/examples/explanation_studyhack_video.md")
+    return Videos.video_element(path="/videos/studyhack.MP4", textpath="markdown_files/examples/explanation_studyhack_video.md")
 
 
 def study_adviser_video() -> rx.Component:

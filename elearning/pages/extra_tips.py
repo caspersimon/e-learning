@@ -28,7 +28,7 @@ def transitions_text() ->rx.Component:
 
 # Importing the videos:
 def handheld_videos() -> rx.Component:
-    return Videos.two_videos_and_title(path1="/videos/8000_followers.mp4", path2="/videos/studyroom.mp4", title="Videos that used the handheld effect")
+    return Videos.two_videos_and_title(path1="/videos/8000_followers.mp4", path2="/videos/studyroom.MP4", title="Videos that used the handheld effect")
 
 
 def gaussian_videos() -> rx.Component:

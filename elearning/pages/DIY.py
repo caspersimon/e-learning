@@ -19,7 +19,7 @@ def download_800_library() -> rx.Component:
 
 def video_8000() -> rx.Component:
     return Videos.video_element_with_2_external_links(
-        path="/videos/8000_followers.MP4",
+        path="/videos/8000_followers.mp4",
         textpath="markdown_files/DIY/8000_video_description_DIY.md",
         link1_desc="Download raw",
         link1_url="https://amsuni-my.sharepoint.com/:u:/g/personal/j_c_s_eikmans_uva_nl/ETaQqVSqp65FuqO1JKlvFFUBdYWhjfb3gDNiYzVqzNqyHQ?e=wO7b8s",

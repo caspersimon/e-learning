@@ -15,7 +15,7 @@ def sidebar_header() -> rx.Component:
         # The logo.
         rx.color_mode_cond(
             rx.image(src="/uva_black.jpg", height="2em"),
-            rx.image(src="/uva_white.jpg", height="2em"),
+            rx.image(src="/uva_white.JPG", height="2em"),
         ),
         rx.spacer(),
         # rx.link(
