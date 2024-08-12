@@ -35,6 +35,38 @@ def gaussian_videos() -> rx.Component:
     return Videos.two_videos_and_title(path1="/videos/studyhack.MP4", path2="/videos/carina.MP4", title="Videos with gaussian blurs")
 
 
+# TODO: change to the correct link
+def transitions_video() -> rx.Component:
+    return rx.video(
+        url="https://www.youtube-nocookie.com/embed/aerEMTYFMS4?si=snSkWT7ct2Tt0Ap-",
+    )
+
+
+def transitions_card() -> rx.Component:
+    return rx.card(
+        rx.flex(
+            rx.stack(
+                rx.heading("Tutorial: how to create custom transitions"),
+                flex_direction="row",
+                padding="1em",
+                flex_grow="0"
+            )
+        ),
+        rx.flex(
+            rx.box(
+                rx.text("dit is nog een placeholder video!"),
+                transitions_video(),
+                flex_basis="100%",
+                flex_shrink="0",
+                flex_grow=1,
+            ),
+            padding="1em",
+            flex_direction="row",
+        ),
+        width="100%",
+    )
+
+
 def go_to_speech() -> rx.Component:
     return rx.button("Go to next chapter",
                      on_click=rx.redirect("/speech")
@@ -51,6 +83,7 @@ def extra_tips() -> rx.Component:
         gaussian_text(),
         gaussian_videos(),
         transitions_text(),
+        transitions_card(),
         go_to_speech(),
         rx.spacer(),
     )

@@ -102,6 +102,7 @@ class Videos:
             )
         )
 
+
     def video_element_with_2_external_links(path,
                                              width: int = 300,
                                              textpath: str = "markdown_files/examples/explanation_studyroom_video.md",

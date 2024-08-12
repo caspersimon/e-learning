@@ -1,0 +1,1 @@
+Keyframes work in very similar ways in each programme.
