@@ -14,6 +14,10 @@ def intro_text() -> rx.Component:
     return Texts.open_markdown(f"{path}/intro.md")
 
 
+def compound_clips_text() -> rx.Component:
+    return Texts.open_markdown(f"{path}/compound_clips.md")
+
+
 def handheld_text() -> rx.Component:
     return Texts.open_markdown(f"{path}/handheld.md")
 
@@ -33,6 +37,36 @@ def handheld_videos() -> rx.Component:
 
 def gaussian_videos() -> rx.Component:
     return Videos.two_videos_and_title(path1="/videos/studyhack.MP4", path2="/videos/carina.MP4", title="Videos with gaussian blurs")
+
+
+def compound_clips_video() -> rx.Component:
+    return rx.video(
+        url="https://www.youtube-nocookie.com/embed/Uqpsc3faGDs?si=xNaEH2ZX0YDtfKJX"
+    )
+
+
+def compound_clips_card() -> rx.Component:
+    return rx.card(
+        rx.flex(
+            rx.stack(
+                rx.heading("Compound clips"),
+                flex_direction="row",
+                padding="1em",
+                flex_grow="0"
+            )
+        ),
+        rx.flex(
+            rx.box(
+                compound_clips_video(),
+                flex_basis="100%",
+                flex_shrink="0",
+                flex_grow=1,
+            ),
+            padding="1em",
+            flex_direction="row",
+        ),
+        width="100%",
+    )
 
 
 # TODO: change to the correct link
@@ -78,6 +112,8 @@ def extra_tips() -> rx.Component:
 
     return rx.vstack(
         intro_text(),
+        compound_clips_text(),
+        compound_clips_card(),
         handheld_text(),
         handheld_videos(),
         gaussian_text(),

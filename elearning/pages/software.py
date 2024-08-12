@@ -17,10 +17,25 @@ def go_to_walkthrough() -> rx.Component:
                      on_click=rx.redirect("/walkthrough")
                      )
 
+
 def download_templates() -> rx.Component:
     return rx.button(
         "Download templates",
         on_click=rx.download(url="/UvA.zip"),
+    )
+
+
+def download_font() -> rx.Component:
+    return rx.button(
+        "Download font",
+        on_click=rx.download(url="/Utopia Std.zip"),
+    )
+
+
+def download_buttons_container() -> rx.Component:
+    return rx.hstack(
+        download_templates(),
+        download_font(),
     )
 
 def text_reset_trial() ->rx.Component:
@@ -32,7 +47,7 @@ def software() -> rx.Component:
 
     return rx.vstack(
         text(),
-        download_templates(),
+        download_buttons_container(),
         go_to_walkthrough(),
         rx.spacer(),
     )

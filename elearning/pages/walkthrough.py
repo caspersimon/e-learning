@@ -32,12 +32,26 @@ def walkthrough_video() -> rx.Component:
         url="https://www.youtube-nocookie.com/embed/FAhXNF9R1-s?si=rZ9xlEbUFvYCl1Wr"
     )
 
+
 def importing_video() -> rx.Component:
     return rx.video(
         url="https://www.youtube-nocookie.com/embed/wc3nRrvdIYw?si=jsvhFulqkwzIet7F"
     )
 
 
+def keyframe_video() -> rx.Component:
+    return rx.video(
+        url="https://www.youtube-nocookie.com/embed/iTIuduDKVuA?si=c__GP6VaT-LwLmSx"
+    )
+
+
+def texts_video() -> rx.Component:
+    return rx.video(
+        url="https://www.youtube-nocookie.com/embed/E6cGiHchZnI?si=ZchszbhlRc78ztDv"
+    )
+
+
+# Cuts part:
 def dialog_jcuts() -> rx.Component:
     return rx.dialog.root(
         rx.dialog.trigger(rx.button("How does this work in other software?")),
@@ -78,6 +92,7 @@ def cuts_card() -> rx.Component:
     )
 
 
+# Texts part:
 def dialog_texts() -> rx.Component:
     return rx.dialog.root(
         rx.dialog.trigger(rx.button("How does this work in other software?")),
@@ -108,8 +123,7 @@ def texts_card() -> rx.Component:
         ),
         rx.flex(
             rx.box(
-                rx.text("dit is nog een placeholder video!"),
-                importing_video(),
+                texts_video(),
                 flex_basis="100%",
                 flex_shrink="0",
                 flex_grow=1,
@@ -117,10 +131,17 @@ def texts_card() -> rx.Component:
             padding="1em",
             flex_direction="row",
         ),
+        rx.box(
+            rx.markdown(
+                "The safe zones used in this video are from [this website](https://rayhollister.com/tiktok-safe-area-templates/)"
+            ),
+            padding_left="1em"
+        ),
         width="100%",
     )
 
 
+# Importing media part:
 def importing_media_card() -> rx.Component:
     return rx.card(
         rx.flex(
@@ -209,6 +230,7 @@ def zoomin_card() -> rx.Component:
     )
 
 
+# Keyframe part:
 def dialog_keyframes() -> rx.Component:
     return rx.dialog.root(
         rx.dialog.trigger(rx.button("How does this work in other software?")),
@@ -237,8 +259,7 @@ def keyframes_card() -> rx.Component:
         ),
         rx.flex(
             rx.box(
-                rx.text("dit is nog een placeholder video!"),
-                importing_video(),
+                keyframe_video(),
                 flex_basis="100%",
                 flex_shrink="0",
                 flex_grow=1,
