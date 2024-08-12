@@ -229,7 +229,7 @@ def keyframes_card() -> rx.Component:
         rx.flex(
             rx.stack(
                 rx.heading("Music and keyframes"),
-                dialog_texts(),
+                dialog_keyframes(),
                 flex_direction="row",
                 padding="1em",
                 flex_grow="0"
