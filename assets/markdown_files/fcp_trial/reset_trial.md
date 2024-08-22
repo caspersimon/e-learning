@@ -8,7 +8,7 @@ You can easily reset the trial period:
 *Manual reset*:
 1. Open Finder
 2. On the menu bar, click *Go > Library*
-3. Find and open the folder named "Application Support"
+3. Find and open the folder named 'Application Support'
 4. Press the key combination **⌘ + ⇧ + .**  (*Command + Shift + dot* ). This will reveal hidden files.
 5. Find the file named _.ffuserdata_ and delete it.
 

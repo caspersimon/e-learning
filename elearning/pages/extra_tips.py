@@ -107,7 +107,7 @@ def go_to_speech() -> rx.Component:
                      )
 
 
-@template(route="/extra", title="4. Extra tips and tricks")
+@template(route="/extra", title="Extra tips and tricks")
 def extra_tips() -> rx.Component:
 
     return rx.vstack(

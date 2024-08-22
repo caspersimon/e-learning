@@ -42,12 +42,20 @@ def speech_card() -> rx.Component:
         width="100%",
     )
 
+
+def go_to_reset_trial() -> rx.Component:
+    return rx.button("Go to next chapter",
+                     on_click=rx.redirect("/fcp_trial")
+                     )
+
+
 @template(route="/speech", title="Enhance Speech")
 def enhance_speech() -> rx.Component:
 
     return rx.vstack(
         enhance_speech_text(),
         speech_card(),
+        go_to_reset_trial(),
         rx.spacer(),
     )
 

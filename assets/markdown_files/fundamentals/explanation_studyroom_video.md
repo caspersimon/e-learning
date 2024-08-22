@@ -1,5 +1,5 @@
 # Optimising for engagement
-A way you can foster more engagement is by referencing (pop) culture and including fun details that people can comment on. 
+A way you can boost engagement is by referencing (pop) culture and including fun details that people can comment on. 
 The video in the example below is our best performing video to date. On TikTok, it got 780.000 views and nearly 3.000 shares. 
 On Instagram, it got more than 5.200.000(!) views and around 1.000 shares.
 

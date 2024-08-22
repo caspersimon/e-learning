@@ -75,6 +75,15 @@ class ThemeState(rx.State):
     gray_color: str = "gray"
 
 
+class DebugMode(rx.State):
+    debug_mode: bool = False
+
+    def switch(self, checked):
+        print(f"DEBUG MODE: {checked}")
+        self.debug_mode = checked
+
+
+
 def template(
     route: str | None = None,
     title: str | None = None,

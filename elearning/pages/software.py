@@ -52,6 +52,7 @@ def software() -> rx.Component:
         rx.spacer(),
     )
 
+
 @template(route="/fcp_trial", title="Resetting the trial period")
 def software() -> rx.Component:
 

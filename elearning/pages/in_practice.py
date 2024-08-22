@@ -33,8 +33,7 @@ def go_to_software() -> rx.Component:
 # The videos that are used:
 
 
-
-@template(route="/in_practice", title="2. Practical tips")
+@template(route="/in_practice", title="Practical Examples")
 def in_practice() -> rx.Component:
     """The home page.
 

@@ -8,9 +8,7 @@ import reflex as rx
 
 
 def main_text() -> rx.Component:
-    with open("markdown_files/walkthrough/walkthrough.md", encoding="utf-8") as walkthrough:
-        content = walkthrough.read()
-    return rx.markdown(content, component_map=styles.markdown_style)
+    return Texts.open_markdown("markdown_files/walkthrough/walkthrough.md")
 
 
 # defining video components
@@ -271,6 +269,22 @@ def keyframes_card() -> rx.Component:
     )
 
 
+def final_steps_text() -> rx.Component:
+    return Texts.open_markdown("markdown_files/walkthrough/final_steps.md")
+
+
+def capcut_frame_rate_text() -> rx.Component:
+    return Texts.open_text("markdown_files/walkthrough/capcut_framerate.md")
+
+
+def capcut_frame_rate_info_box() -> rx.Component:
+    return rx.callout(
+        capcut_frame_rate_text(),
+        icon="info",
+        size="2"
+    )
+
+
 def go_to_music() -> rx.Component:
     return rx.button("Go to next chapter",
                      on_click=rx.redirect("/music")
@@ -292,6 +306,8 @@ def walkthrough() -> rx.Component:
         texts_card(),
         zoomin_card(),
         keyframes_card(),
+        final_steps_text(),
+        capcut_frame_rate_info_box(),
         go_to_music(),
         rx.spacer(),
     )

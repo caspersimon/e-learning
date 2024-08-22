@@ -39,6 +39,12 @@ def video_vacancy() -> rx.Component:
         )
 
 
+def go_to_checklist() -> rx.Component:
+    return rx.button("Go to next chapter",
+                     on_click=rx.redirect("/checklist")
+                     )
+
+
 @template(route="/DIY", title="DIY")
 def DIY() -> rx.Component:
     """The home page.
@@ -51,29 +57,10 @@ def DIY() -> rx.Component:
         rx.spacer(),
         video_8000(),
         video_vacancy(),
-        go_to_extra()
+        go_to_checklist()
 
     )
 
 
-def checklist_text() -> rx.Component:
-    return Texts.open_markdown("markdown_files/DIY/checklist.md")
 
-def go_to_extra() -> rx.Component:
-    return rx.button("Go to next chapter",
-                     on_click=rx.redirect("/extra")
-                     )
-
-@template(route="/checklist", title="checklist")
-def DIY() -> rx.Component:
-    """The home page.
-
-    Returns:
-        The UI for the home page.
-    """
-    return rx.vstack(
-        checklist_text(),
-        go_to_extra()
-
-    )
 

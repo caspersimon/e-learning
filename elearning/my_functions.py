@@ -1,18 +1,42 @@
 import reflex as rx
 from elearning import styles
 from typing import Union
+from .templates import DebugMode
 
 
 class Texts:
     def open_text(name: str):
-        with open(name, encoding="utf-8") as file:
+        with open(f"assets/{name}", encoding="utf-8") as file:
             content = file.read()
-            return content
+
+            return content, rx.cond(
+                    DebugMode.debug_mode,
+                    rx.vstack(
+                        rx.markdown(f"**From**: `{name}` \n \n ***"),
+                        rx.button(
+                            "Download textfile",
+                            on_click=rx.download(url=f"/{name}"),
+                        ),
+                    )
+                ),
 
     def open_markdown(name: str):
-        with open(name, encoding="utf-8") as file:
+        with open(f"assets/{name}", encoding="utf-8") as file:
             content = file.read()
-            return rx.markdown(content, component_map=styles.markdown_style)
+
+            return rx.vstack(
+                rx.markdown(content, component_map=styles.markdown_style),
+                rx.cond(
+                    DebugMode.debug_mode,
+                    rx.vstack(
+                        rx.markdown(f"**From**: `{name}` \n \n ***"),
+                        rx.button(
+                            "Download textfile",
+                            on_click=rx.download(url=f"/{name}"),
+                        ),
+                    )
+                ),
+            )
 
 
 def video(path, width: int = 400, height : Union[int, str] = "auto") -> rx.Component:

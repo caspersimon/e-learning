@@ -18,14 +18,6 @@ def sidebar_header() -> rx.Component:
             rx.image(src="/uva_white.JPG", height="2em"),
         ),
         rx.spacer(),
-        # rx.link(
-        #     rx.button(
-        #         rx.icon("github"),
-        #         color_scheme="gray",
-        #         variant="soft",
-        #     ),
-        #     href="https://github.com/reflex-dev/reflex",
-        # ),
         align="center",
         width="100%",
         border_bottom=styles.border,
@@ -47,11 +39,7 @@ def sidebar_footer() -> rx.Component:
             href="/settings/",
             color_scheme="gray",
         ),
-        # rx.link(
-        #     rx.text("Blog"),
-        #     href="https://reflex.dev/blog/",
-        #     color_scheme="gray",
-        # ),
+
         width="100%",
         border_top=styles.border,
         padding="1em",

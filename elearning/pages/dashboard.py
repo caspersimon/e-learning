@@ -18,6 +18,8 @@ def studyroom_video() -> rx.Component:
     return Videos.video_element(path="/videos/studyroom.MP4", textpath="markdown_files/fundamentals/explanation_studyroom_video.md")
 
 
+def main_text() -> rx.Component:
+    return Texts.open_markdown("markdown_files/fundamentals/fundamentals.md")
 
 @template(route="/fundamentals", title="Keeping People Interested")
 def fundamentals() -> rx.Component:
@@ -26,10 +28,9 @@ def fundamentals() -> rx.Component:
     Returns:
         The UI for the home page.
     """
-    with open("markdown_files/fundamentals/fundamentals.md", encoding="utf-8") as fundamentals:
-        content = fundamentals.read()
+
     return rx.vstack(
-        rx.markdown(content, component_map=styles.markdown_style),
+        main_text(),
         studyroom_video(),
         go_to_examples(),
     )

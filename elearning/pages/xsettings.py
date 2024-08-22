@@ -1,6 +1,6 @@
 """The settings page."""
 
-from elearning.templates import ThemeState, template
+from elearning.templates import ThemeState, template, DebugMode
 
 import reflex as rx
 
@@ -67,5 +67,9 @@ def settings() -> rx.Component:
                 value=ThemeState.gray_color,
                 on_change=ThemeState.set_gray_color,
             ),
+        ),
+        rx.hstack(
+            rx.text("Proofread mode: "),
+            rx.switch(checked=DebugMode.debug_mode, on_change=DebugMode.switch)
         ),
     )
