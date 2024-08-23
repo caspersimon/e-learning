@@ -6,12 +6,12 @@ from .templates import DebugMode
 
 class Texts:
     def open_text(name: str):
-        with open(f"assets/{name}", encoding="utf-8") as file:
+        with open(f"{name}", encoding="utf-8") as file:
             content = file.read()
 
             return content, rx.cond(
                     DebugMode.debug_mode,
-                    rx.vstack(
+                    rx.hstack(
                         rx.markdown(f"**From**: `{name}` \n \n ***"),
                         rx.button(
                             "Download textfile",
@@ -21,14 +21,14 @@ class Texts:
                 ),
 
     def open_markdown(name: str):
-        with open(f"assets/{name}", encoding="utf-8") as file:
+        with open(f"{name}", encoding="utf-8") as file:
             content = file.read()
 
             return rx.vstack(
                 rx.markdown(content, component_map=styles.markdown_style),
                 rx.cond(
                     DebugMode.debug_mode,
-                    rx.vstack(
+                    rx.hstack(
                         rx.markdown(f"**From**: `{name}` \n \n ***"),
                         rx.button(
                             "Download textfile",

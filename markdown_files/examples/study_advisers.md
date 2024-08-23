@@ -1,0 +1,1 @@
+This is an example of a video with many zoom-ins and cuts.

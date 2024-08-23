@@ -125,7 +125,6 @@ def template(
                     rx.vstack(
                         page_content(),
                         rx.spacer(),
-                        # rx.logo(), # this is the "built with reflex" thing
                         **styles.template_content_style,
                     ),
                     **styles.template_page_style,

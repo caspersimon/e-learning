@@ -1,0 +1,1 @@
+CapCut automatically sets the frame rate of new projects to 30 fps. If your video is a different frame rate, you can change the frame rate in CapCut by clicking 'Modify' under the 'Details' panel in the top-right corner of your screen.

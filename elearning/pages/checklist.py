@@ -13,7 +13,7 @@ def go_to_extra() -> rx.Component:
                      )
 
 
-@template(route="/checklist", title="checklist")
+@template(route="/checklist", title="Checklist")
 def checklist() -> rx.Component:
     """The home page.
 
