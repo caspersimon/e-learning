@@ -69,10 +69,9 @@ def compound_clips_card() -> rx.Component:
     )
 
 
-# TODO: change to the correct link
 def transitions_video() -> rx.Component:
     return rx.video(
-        url="https://www.youtube-nocookie.com/embed/aerEMTYFMS4?si=snSkWT7ct2Tt0Ap-",
+        url="https://www.youtube-nocookie.com/embed/EbcLwuCmW7Q?si=lgbY71sj4vIWfq1Y",
     )
 
 
@@ -88,7 +87,6 @@ def transitions_card() -> rx.Component:
         ),
         rx.flex(
             rx.box(
-                rx.text("dit is nog een placeholder video!"),
                 transitions_video(),
                 flex_basis="100%",
                 flex_shrink="0",
