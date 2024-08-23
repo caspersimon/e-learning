@@ -26,9 +26,11 @@ def study_adviser_video() -> rx.Component:
 
 
 def go_to_software() -> rx.Component:
-    return rx.button("Go to next chapter",
-                     on_click=rx.redirect("/software")
-                     )
+    return rx.button(
+        "Go to next chapter",
+        rx.icon("arrow-right"),
+        on_click=rx.redirect("/software")
+    )
 
 # The videos that are used:
 

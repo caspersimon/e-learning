@@ -9,6 +9,7 @@ def checklist_text() -> rx.Component:
 
 def go_to_extra() -> rx.Component:
     return rx.button("Go to next chapter",
+                     rx.icon("arrow-right"),
                      on_click=rx.redirect("/extra")
                      )
 

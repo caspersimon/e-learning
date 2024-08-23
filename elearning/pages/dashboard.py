@@ -10,6 +10,7 @@ from elearning.my_functions import Texts, Videos
 
 def go_to_examples() -> rx.Component:
     return rx.button("Go to next chapter",
+                     rx.icon("arrow-right"),
                      on_click=rx.redirect("/in_practice")
                      )
 

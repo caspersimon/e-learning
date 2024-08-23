@@ -45,6 +45,7 @@ def speech_card() -> rx.Component:
 
 def go_to_reset_trial() -> rx.Component:
     return rx.button("Go to next chapter",
+                     rx.icon("arrow-right"),
                      on_click=rx.redirect("/fcp_trial")
                      )
 

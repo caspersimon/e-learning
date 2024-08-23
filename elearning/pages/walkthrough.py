@@ -52,7 +52,7 @@ def texts_video() -> rx.Component:
 # Cuts part:
 def dialog_jcuts() -> rx.Component:
     return rx.dialog.root(
-        rx.dialog.trigger(rx.button("How does this work in other software?")),
+        rx.dialog.trigger(rx.button(rx.icon("info"), "How does this work in other software?")),
         rx.dialog.content(
             Texts.open_markdown("markdown_files/walkthrough/jcuts_compare.md"),
             rx.box(
@@ -93,7 +93,7 @@ def cuts_card() -> rx.Component:
 # Texts part:
 def dialog_texts() -> rx.Component:
     return rx.dialog.root(
-        rx.dialog.trigger(rx.button("How does this work in other software?")),
+        rx.dialog.trigger(rx.button(rx.icon("info"), "How does this work in other software?")),
         rx.dialog.content(
             Texts.open_markdown("markdown_files/walkthrough/texts_compare.md"),
             rx.image(src="/titleplus.png", width="300px", height="auto"),
@@ -190,7 +190,7 @@ def navigating_fcp_card() -> rx.Component:
 
 def dialog_zoomin() -> rx.Component:
     return rx.dialog.root(
-        rx.dialog.trigger(rx.button("How does this work in other software?")),
+        rx.dialog.trigger(rx.button(rx.icon("info"), "How does this work in other software?")),
         rx.dialog.content(
             Texts.open_markdown("markdown_files/walkthrough/zoomin_compare.md"),
             rx.box(
@@ -231,7 +231,7 @@ def zoomin_card() -> rx.Component:
 # Keyframe part:
 def dialog_keyframes() -> rx.Component:
     return rx.dialog.root(
-        rx.dialog.trigger(rx.button("How does this work in other software?")),
+        rx.dialog.trigger(rx.button(rx.icon("info"), "How does this work in other software?")),
         rx.dialog.content(
             Texts.open_markdown("markdown_files/walkthrough/keyframes_compare.md"),
             rx.box(
@@ -287,6 +287,7 @@ def capcut_frame_rate_info_box() -> rx.Component:
 
 def go_to_music() -> rx.Component:
     return rx.button("Go to next chapter",
+                     rx.icon("arrow-right"),
                      on_click=rx.redirect("/music")
                      )
 

@@ -12,6 +12,7 @@ def main_text() -> rx.Component:
 
 def go_to_fundamentals() -> rx.Component:
     return rx.button("Go to next chapter",
+                     rx.icon("arrow-right"),
                      on_click=rx.redirect("/fundamentals")
                      )
 

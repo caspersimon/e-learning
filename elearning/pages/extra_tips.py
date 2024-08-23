@@ -101,6 +101,7 @@ def transitions_card() -> rx.Component:
 
 def go_to_speech() -> rx.Component:
     return rx.button("Go to next chapter",
+                     rx.icon("arrow-right"),
                      on_click=rx.redirect("/speech")
                      )
 

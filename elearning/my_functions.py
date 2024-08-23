@@ -11,12 +11,15 @@ class Texts:
 
             return content, rx.cond(
                     DebugMode.debug_mode,
-                    rx.hstack(
-                        rx.markdown(f"**From**: `{name}` \n \n ***"),
-                        rx.button(
-                            "Download textfile",
-                            on_click=rx.download(url=f"/{name}"),
-                        ),
+                    rx.card(
+                        rx.vstack(
+                            rx.markdown(f"**From**: `{name}` \n \n ***"),
+                            rx.button(
+                                rx.icon("file-down"),
+                                "Download textfile",
+                                on_click=rx.download(url=f"/{name}"),
+                            ),
+                        )
                     )
                 ),
 
@@ -28,12 +31,16 @@ class Texts:
                 rx.markdown(content, component_map=styles.markdown_style),
                 rx.cond(
                     DebugMode.debug_mode,
-                    rx.hstack(
-                        rx.markdown(f"**From**: `{name}` \n \n ***"),
-                        rx.button(
-                            "Download textfile",
-                            on_click=rx.download(url=f"/{name}"),
-                        ),
+                    rx.card(
+                        rx.vstack(
+                            rx.markdown(f"**From**: `{name}` \n \n ***"),
+                            rx.button(
+                                rx.icon("file-down"),
+                                "Download textfile",
+                                on_click=rx.download(url=f"/{name}"),
+                            ),
+                            spacing="0.5em"
+                        )
                     )
                 ),
             )
@@ -93,11 +100,13 @@ class Videos:
                         rx.flex(
                             rx.stack(
                                 rx.button(
+                                    rx.icon(tag="download"),
                                     file1_desc,
                                     on_click=rx.download(url=file1_path),
                                 ),
                                 rx.button(
-                                    file2_desc,
+                                    rx.icon("download"),
+                                    f"{file2_desc}",
                                     on_click=rx.download(url=file2_path),
                                 ),
 
@@ -148,10 +157,12 @@ class Videos:
                         rx.flex(
                             rx.stack(
                                 rx.button(
+                                    rx.icon(tag="external-link"),
                                     link1_desc,
                                     on_click=rx.redirect(link1_url, external=True),
                                 ),
                                 rx.button(
+                                    rx.icon(tag="external-link"),
                                     link2_desc,
                                     on_click=rx.redirect(link2_url, external=True),
                                 ),
