@@ -69,7 +69,7 @@ def settings() -> rx.Component:
             ),
         ),
         rx.hstack(
-            rx.text("Proofread mode: "),
+            rx.text("Proofreading mode: "),
             rx.switch(checked=DebugMode.debug_mode, on_change=DebugMode.switch)
         ),
     )

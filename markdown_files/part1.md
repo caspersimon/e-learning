@@ -18,22 +18,24 @@ In this e-learning, you will learn about best practices and how previous videos 
 # Contents
 **Part 1**
 1. Introduction
-2. [Keeping People Interested](/fundamentals)
-3. [Practical Examples](/in_practice)
+2. [Keeping people interested](/fundamentals)
+3. [Practical examples](/in_practice)
 
-**Part 2: behind the scenes**
+**Part 2: Getting Started**
 
-4. [Downloading Software](/software)
-5. [Editing the Video](/walkthrough)
-6. [Finding Music to Use](/music)
+4. [Downloading software](/software)
+5. [Editing the video](/walkthrough)
+6. [Finding music to use](/music)
 
 **Part 3: Doing It Yourself**
 
-7. [Downloading Raw Files](/DIY)
-8. [Checklist for Editing](/Checklist)
+7. [Downloading raw files](/DIY)
+8. [Editing checklist](/Checklist)
 
-**Part 4: Extra Info**
+**Part 4: Extra Material**
 
-9. [Extra Effects You Can Try](/extra)
-10. [Improve Sound Quality](/speech)
-11. [Resetting the Final Cut Pro Trial](/fcp_trial)
+9. [Extra effects you can try](/extra)
+10. [Improving microphone quality](/speech)
+11. [Resetting the Final Cut Pro trial](/fcp_trial)
+
+

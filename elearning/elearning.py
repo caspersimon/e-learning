@@ -15,16 +15,16 @@ class State(rx.State):
 
 pages = [
     {"title": "Introduction", "path": "/"},
-    {"title": "Keeping People Interested", "path": "/fundamentals"},
-    {"title": "Practical Examples", "path": "/in_practice"},
-    {"title": "Downloading Software", "path": "/software"},
-    {"title": "Editing the Video", "path": "/walkthrough"},
+    {"title": "Keeping people interested", "path": "/fundamentals"},
+    {"title": "Practical examples", "path": "/in_practice"},
+    {"title": "Downloading software", "path": "/software"},
+    {"title": "Editing the video", "path": "/walkthrough"},
     {"title": "Finding music to use", "path": "/music"},
     {"title": "Downloading raw files", "path": "/DIY"},
     {"title": "Editing checklist", "path": "/checklist"},
-    {"title": "Extra Effects you can try", "path": "/extra"},
-    {"title": "Improve microphone quality", "path": "/speech"},
-    {"title": "Reset FCP trial", "path": "/fcp_trial"},
+    {"title": "Extra effects you can try", "path": "/extra"},
+    {"title": "Improving microphone quality", "path": "/speech"},
+    {"title": "Resetting FCP trial", "path": "/fcp_trial"},
 ]
 
 
