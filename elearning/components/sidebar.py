@@ -104,6 +104,8 @@ def sidebar() -> rx.Component:
         rx.vstack(
             sidebar_header(),
 
+            # The first three items:
+
             rx.vstack(
                 *[
                     sidebar_item(
@@ -112,6 +114,8 @@ def sidebar() -> rx.Component:
                     )
                     for page in elearning.pages[0:3] if page["path"] != "/settings"
                 ],
+
+                # Items under header "Getting Started"
                 rx.heading("Getting Started", size="5"),
                 *[
                     sidebar_item(
@@ -120,6 +124,8 @@ def sidebar() -> rx.Component:
                     )
                     for page in elearning.pages[3:6] if page["path"] != "/settings"
                 ],
+
+                # Items under header "DIY"
                 rx.heading("DIY", size="5"),
                 *[
                     sidebar_item(
@@ -128,7 +134,9 @@ def sidebar() -> rx.Component:
                     )
                     for page in elearning.pages[6:8] if page["path"] != "/settings"
                 ],
-                rx.heading("Extra material", size="5"),
+
+                # Items under header "Extra Material"
+                rx.heading("Extra Material", size="5"),
                 *[
                     sidebar_item(
                         text=page.get("title", page["path"].strip("/").capitalize()),
