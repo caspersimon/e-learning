@@ -112,7 +112,7 @@ def sidebar() -> rx.Component:
                         text=page.get("title", page["path"].strip("/").capitalize()),
                         url=page["path"],
                     )
-                    for page in elearning.pages[0:3] if page["path"] != "/settings"
+                    for page in elearning.pages[0:3]
                 ],
 
                 # Items under header "Getting Started"
@@ -122,7 +122,7 @@ def sidebar() -> rx.Component:
                         text=page.get("title", page["path"].strip("/").capitalize()),
                         url=page["path"],
                     )
-                    for page in elearning.pages[3:6] if page["path"] != "/settings"
+                    for page in elearning.pages[3:6]
                 ],
 
                 # Items under header "DIY"
@@ -132,7 +132,7 @@ def sidebar() -> rx.Component:
                         text=page.get("title", page["path"].strip("/").capitalize()),
                         url=page["path"],
                     )
-                    for page in elearning.pages[6:8] if page["path"] != "/settings"
+                    for page in elearning.pages[6:8]
                 ],
 
                 # Items under header "Extra Material"
@@ -142,7 +142,7 @@ def sidebar() -> rx.Component:
                         text=page.get("title", page["path"].strip("/").capitalize()),
                         url=page["path"],
                     )
-                    for page in elearning.pages[8:] if page["path"] != "/settings"
+                    for page in elearning.pages[8:]
                 ],
                 width="100%",
                 overflow_y="auto",
